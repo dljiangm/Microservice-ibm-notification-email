@@ -19,11 +19,11 @@
 	
 # How to call the application?
 	The application applies a RESTful API via HTTP + POST + JSON, default port is 8001.
-	Simple(plain) E-mail: http://localhost:8001/simple-email
-	Html E-mail: http://localhost:8001/html-email
-	Data format:
+	1. Simple(plain) E-mail: http://localhost:8001/simple-email
+	2. Html E-mail: http://localhost:8001/html-email
+	3. Data format:
 	{
-		"sendTo": "xxxx@163.com",
+		"sendTo": "xxxx@xx.ibm.com",
 		"content": "Hello xxxx, this is my test e-mail",
 		"subject": "Hello subject"
 	}
@@ -32,5 +32,3 @@
 	1. Enable Eureka registry based on Spring cloud.
 	2. Apply muitiply recipients.
 	3. Apply attachment capability.
-
-
