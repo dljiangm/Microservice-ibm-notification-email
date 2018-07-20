@@ -1,4 +1,4 @@
-package com.mirco.app.func;
+package com.micro.app.func;
 
 public class EmailForm {
 	private String sendTo;
