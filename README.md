@@ -1,7 +1,5 @@
 # Microservice-ibm-notification-email
 
-# Microservice-ibm-bluepage
-
 # What it is for?
 	Send E-mail to an IBMer via IBM internal network.
 
@@ -19,10 +17,16 @@
 	3. Build image with command 'docker build -t notification-email .'.
 	4. Run docker container with command 'docker run -itd -p 8001:8001 --restart=always notification-email'.
 	
-# How to call the application and get bluepage info?
-	The application applies a RESTful API via HTTP + GET + JSON, default port is 800.
-	Example url: http://localhost:8002/bluepage/xxxxx@xx.ibm.com
-	"xxxxx@xx.ibm.com" is the e-mail id that you need to pass via the API.
+# How to call the application?
+	The application applies a RESTful API via HTTP + POST + JSON, default port is 8001.
+	Simple(plain) E-mail: http://localhost:8001/simple-email
+	Html E-mail: http://localhost:8001/html-email
+	Data format:
+	{
+		"sendTo": "xxxx@163.com",
+		"content": "Hello xxxx, this is my test e-mail",
+		"subject": "Hello subject"
+	}
 	
 # What will have in future?
 	1. Enable Eureka registry based on Spring cloud.
