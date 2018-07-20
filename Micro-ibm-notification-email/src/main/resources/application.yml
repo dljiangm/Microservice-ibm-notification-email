@@ -1,0 +1,10 @@
+
+server:
+  port: 8001
+  
+spring:
+  mail:
+    host: na.relay.ibm.com
+    default-encoding: UTF-8
+    username: xxxx@ibm.com
+    
